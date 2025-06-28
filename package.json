@@ -1,0 +1,10 @@
+{
+  "name": "ericcaptures-site",
+  "version": "1.0.0",
+  "description": "Static site with modular components",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "author": "",
+  "license": "MIT"
+}

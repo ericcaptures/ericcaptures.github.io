@@ -1,0 +1,10 @@
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.faq-answer {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
