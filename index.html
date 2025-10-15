@@ -158,7 +158,7 @@
             </div>
 
             <!-- Portal Cards -->
-            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 <!-- Legal Professional Portal -->
                 <div class="portal-card legal-gradient rounded-3xl p-8 text-white relative overflow-hidden cursor-pointer floating-animation" onclick="enterLegalPortal()">
                     <div class="relative z-10">
@@ -251,6 +251,48 @@
                     <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
                 </div>
 
+                <!-- Personal Story Portal -->
+                <div class="portal-card bg-gradient-to-br from-amber-600 via-orange-600 to-red-700 rounded-3xl p-8 text-white relative overflow-hidden cursor-pointer floating-animation" onclick="enterPersonalPortal()" style="transform: rotate(-1deg);">
+                    <div class="relative z-10">
+                        <div class="portal-icon w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-8 mx-auto" style="transform: rotate(2deg);">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-4 text-center" style="font-family: 'Courier New', monospace;">The Real Story</h2>
+                        <p class="text-orange-100 text-center mb-6 leading-relaxed">
+                            Raw, unfiltered personal journey. The messy, imperfect, human side 
+                            behind the polished professional facade. Real struggles, real growth.
+                        </p>
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center text-orange-100">
+                                <span class="w-2 h-2 bg-orange-300 rounded-full mr-3 animate-pulse"></span>
+                                Honest Personal Timeline
+                            </div>
+                            <div class="flex items-center text-orange-100">
+                                <span class="w-2 h-2 bg-orange-300 rounded-full mr-3 animate-pulse"></span>
+                                Failures & Lessons Learned
+                            </div>
+                            <div class="flex items-center text-orange-100">
+                                <span class="w-2 h-2 bg-orange-300 rounded-full mr-3 animate-pulse"></span>
+                                Behind-the-Scenes Reality
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="inline-flex items-center text-white font-semibold" style="font-family: 'Courier New', monospace;">
+                                Enter if you dare...
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16" style="transform: rotate(45deg);"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12" style="transform: rotate(-30deg);"></div>
+                    <div class="absolute top-1/2 left-1/2 w-4 h-4 bg-white/20 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                </div>
+
                 <!-- Creative Arts Portal -->
                 <div class="portal-card creative-gradient rounded-3xl p-8 text-white relative overflow-hidden cursor-pointer floating-animation" onclick="enterCreativePortal()">
                     <div class="relative z-10">
@@ -311,6 +353,7 @@
                     <div class="flex flex-wrap justify-center gap-4">
                         <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Legal Analysis</span>
                         <span class="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">Research & Development</span>
+                        <span class="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Authentic Storytelling</span>
                         <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">Creative Direction</span>
                         <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">Strategic Thinking</span>
                     </div>
@@ -539,6 +582,175 @@
         </div>
     </section>
 
+    <!-- Personal Story Portal Section -->
+    <section id="personal-portal" class="min-h-full py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 hidden" style="background-image: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grain\" width=\"100\" height=\"100\" patternUnits=\"userSpaceOnUse\"><circle cx=\"20\" cy=\"20\" r=\"1\" fill=\"%23000\" opacity=\"0.05\"/><circle cx=\"80\" cy=\"40\" r=\"1\" fill=\"%23000\" opacity=\"0.03\"/><circle cx=\"40\" cy=\"80\" r=\"1\" fill=\"%23000\" opacity=\"0.04\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grain)\"/></svg>');">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <button onclick="returnToHome()" class="inline-flex items-center text-orange-600 hover:text-orange-700 mb-8 font-medium" style="font-family: 'Courier New', monospace;">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    ← Back to the polished version
+                </button>
+                <h1 class="text-5xl font-bold text-gray-900 mb-6" style="font-family: 'Courier New', monospace; transform: rotate(-0.5deg);">
+                    The Real Story
+                </h1>
+                <div class="max-w-4xl mx-auto bg-white/70 backdrop-blur-sm rounded-lg p-6 border-l-4 border-orange-500" style="transform: rotate(0.3deg);">
+                    <p class="text-lg text-gray-700 leading-relaxed italic">
+                        "Behind every polished professional facade is a human being who has stumbled, 
+                        failed, learned, and grown. This is that story - unfiltered, imperfect, and real."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Raw Timeline -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center" style="font-family: 'Courier New', monospace;">
+                    The Messy Timeline
+                </h2>
+                <div class="space-y-8">
+                    <!-- Early Struggles -->
+                    <div class="bg-white/80 rounded-lg p-6 border-l-4 border-red-400" style="transform: rotate(-0.2deg);">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-red-500 font-bold text-lg" style="font-family: 'Courier New', monospace;">2010-2015</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">The "Lost Years"</h3>
+                                <p class="text-gray-700 mb-3">
+                                    Dropped out of college twice. Worked dead-end jobs. Lived in my parents' basement 
+                                    at 24. Everyone else seemed to have it figured out while I was still asking 
+                                    "What do I want to be when I grow up?"
+                                </p>
+                                <div class="text-sm text-red-600 font-medium">
+                                    💔 Reality Check: Success isn't linear, and comparison is the thief of joy.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Turning Point -->
+                    <div class="bg-white/80 rounded-lg p-6 border-l-4 border-yellow-400" style="transform: rotate(0.3deg);">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-yellow-600 font-bold text-lg" style="font-family: 'Courier New', monospace;">2016-2018</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Rock Bottom & Rebuilding</h3>
+                                <p class="text-gray-700 mb-3">
+                                    Got fired from a job I hated (best thing that ever happened). Decided to go back 
+                                    to school at 26. Worked nights, studied days, survived on ramen and stubbornness. 
+                                    Failed my first law school entrance exam. Took it again.
+                                </p>
+                                <div class="text-sm text-yellow-700 font-medium">
+                                    ⚡ Lesson: Sometimes you need to lose everything to find what really matters.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Grind -->
+                    <div class="bg-white/80 rounded-lg p-6 border-l-4 border-blue-400" style="transform: rotate(-0.1deg);">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-blue-600 font-bold text-lg" style="font-family: 'Courier New', monospace;">2019-2021</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">The Grind Years</h3>
+                                <p class="text-gray-700 mb-3">
+                                    Law school while working full-time. 4 hours of sleep became normal. 
+                                    Imposter syndrome hit hard - surrounded by people who seemed naturally brilliant 
+                                    while I was just trying to keep up. Almost quit three times.
+                                </p>
+                                <div class="text-sm text-blue-700 font-medium">
+                                    🎯 Truth: Persistence beats talent when talent doesn't persist.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Breaking Through -->
+                    <div class="bg-white/80 rounded-lg p-6 border-l-4 border-green-400" style="transform: rotate(0.2deg);">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-green-600 font-bold text-lg" style="font-family: 'Courier New', monospace;">2022-Present</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Finding My Voice</h3>
+                                <p class="text-gray-700 mb-3">
+                                    Started to see that my "unconventional" path was actually my strength. 
+                                    The failures taught me resilience. The late start gave me perspective. 
+                                    The struggles made me human. Still figuring it out, but now I'm okay with that.
+                                </p>
+                                <div class="text-sm text-green-700 font-medium">
+                                    🌱 Growth: Your mess becomes your message.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Honest Stats -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white/70 rounded-lg p-6 text-center" style="transform: rotate(-1deg);">
+                    <div class="text-3xl font-bold text-red-600 mb-2" style="font-family: 'Courier New', monospace;">47</div>
+                    <div class="text-gray-700 font-medium">Rejection Letters</div>
+                    <div class="text-sm text-gray-500 mt-2">Each one stung, but taught me something</div>
+                </div>
+                <div class="bg-white/70 rounded-lg p-6 text-center" style="transform: rotate(0.5deg);">
+                    <div class="text-3xl font-bold text-yellow-600 mb-2" style="font-family: 'Courier New', monospace;">3</div>
+                    <div class="text-gray-700 font-medium">Career Pivots</div>
+                    <div class="text-sm text-gray-500 mt-2">Sometimes you have to try different doors</div>
+                </div>
+                <div class="bg-white/70 rounded-lg p-6 text-center" style="transform: rotate(-0.3deg);">
+                    <div class="text-3xl font-bold text-green-600 mb-2" style="font-family: 'Courier New', monospace;">∞</div>
+                    <div class="text-gray-700 font-medium">Lessons Learned</div>
+                    <div class="text-sm text-gray-500 mt-2">Still learning every single day</div>
+                </div>
+            </div>
+
+            <!-- The Real Skills -->
+            <div class="bg-white/80 rounded-lg p-8 mb-16" style="transform: rotate(0.1deg);">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center" style="font-family: 'Courier New', monospace;">
+                    Skills They Don't Teach in School
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-3">Hard-Won Wisdom</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• How to bounce back from spectacular failures</li>
+                            <li>• Working 80-hour weeks without losing your soul</li>
+                            <li>• Asking for help (took me way too long to learn this)</li>
+                            <li>• Saying no to opportunities that look good but feel wrong</li>
+                            <li>• Finding mentors in unexpected places</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-3">Emotional Intelligence</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Reading the room when everyone's being polite</li>
+                            <li>• Managing anxiety in high-pressure situations</li>
+                            <li>• Building genuine relationships, not just networks</li>
+                            <li>• Staying humble when things go well</li>
+                            <li>• Keeping perspective when they don't</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Reality -->
+            <div class="text-center bg-gradient-to-r from-orange-100 to-red-100 rounded-lg p-8" style="transform: rotate(-0.2deg);">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4" style="font-family: 'Courier New', monospace;">
+                    Where I Am Now (The Honest Version)
+                </h3>
+                <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    I'm not where I thought I'd be at this age, but I'm exactly where I need to be. 
+                    Still have imposter syndrome some days. Still make mistakes. Still learning. 
+                    But now I know that's not a bug - it's a feature.
+                </p>
+                <div class="inline-block bg-white/80 rounded-lg px-6 py-3" style="transform: rotate(0.5deg);">
+                    <p class="text-gray-800 font-medium" style="font-family: 'Courier New', monospace;">
+                        "The best professionals aren't the ones who never failed.<br>
+                        They're the ones who failed forward."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Creative Portal Section (Photography) -->
     <section id="creative-portal" class="min-h-full py-20 bg-gradient-to-br from-red-50 to-pink-100 hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -662,10 +874,17 @@
             window.scrollTo(0, 0);
         }
 
+        function enterPersonalPortal() {
+            document.getElementById('home').classList.add('hidden');
+            document.getElementById('personal-portal').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
         function returnToHome() {
             document.getElementById('legal-portal').classList.add('hidden');
             document.getElementById('research-portal').classList.add('hidden');
             document.getElementById('creative-portal').classList.add('hidden');
+            document.getElementById('personal-portal').classList.add('hidden');
             document.getElementById('home').classList.remove('hidden');
             window.scrollTo(0, 0);
         }
@@ -724,5 +943,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98f2a4ad039ddcc7',t:'MTc2MDU2NjE5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98f2af444101584b',t:'MTc2MDU2NjYyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
