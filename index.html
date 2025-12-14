@@ -108,6 +108,7 @@
         
         .portal-card:hover .portal-icon {
             transform: scale(1.1) rotate(5deg);
+            position: relative;
         }
         
         .bg-pattern {
@@ -127,7 +128,7 @@
 
 .struck-text::after {
   content: attr(data-tooltip);
-  position: absolute;
+  position: fixed;
   left: 50%;
   bottom: 130%;
   transform: translateX(-50%);
@@ -193,7 +194,7 @@
             <!-- Portal Cards -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 <!-- Legal Professional Portal -->
-                <div class="portal-card legal-gradient rounded-3xl p-8 text-white relative overflow-hidden cursor-pointer floating-animation" onclick="enterLegalPortal()">
+                <div class="portal-card legal-gradient rounded-3xl p-8 text-white relative overflow-visible cursor-pointer floating-animation" onclick="enterLegalPortal()">
                     <div class="relative z-10">
                         <div class="portal-icon w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-8 mx-auto">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
