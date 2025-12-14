@@ -118,39 +118,36 @@
         }
         .struck-text {
   position: relative;
-  color: rgba(255, 255, 255, 0.65); /* readable on dark gradients */
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: line-through;
-  text-decoration-color: rgba(253, 186, 116, 0.9); /* amber-300 */
+  text-decoration-color: rgba(251, 191, 36, 0.9); /* amber-400 */
   text-decoration-thickness: 2px;
   cursor: help;
 }
-
 
 .struck-text::after {
   content: attr(data-tooltip);
   position: absolute;
   left: 50%;
-  bottom: 125%;
+  bottom: 130%;
   transform: translateX(-50%);
-  width: max-content;
-  max-width: 260px;
-  padding: 10px 12px;
-  background: rgba(30, 30, 30, 0.95);
-  color: #fff;
+  max-width: 280px;
+  padding: 12px 14px;
+  background: rgba(12, 12, 12, 0.97);
+  color: #f9fafb;
   font-size: 0.85rem;
-  line-height: 1.4;
-  border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  line-height: 1.45;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease;
-  transform-origin: bottom center;
   z-index: 1000;
 }
 
 .struck-text:hover::after {
   opacity: 1;
-  transform: translateX(-50%) translateY(-4px);
+  transform: translateX(-50%) translateY(-6px);
 }
 
     </style>
