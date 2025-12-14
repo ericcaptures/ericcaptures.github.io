@@ -118,11 +118,13 @@
         }
         .struck-text {
   position: relative;
-  color: #c62828;
+  color: rgba(255, 255, 255, 0.65); /* readable on dark gradients */
   text-decoration: line-through;
+  text-decoration-color: rgba(253, 186, 116, 0.9); /* amber-300 */
+  text-decoration-thickness: 2px;
   cursor: help;
-  font-weight: 500;
 }
+
 
 .struck-text::after {
   content: attr(data-tooltip);
