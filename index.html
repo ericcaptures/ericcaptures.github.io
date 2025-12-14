@@ -157,40 +157,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    .struck-text {
-      position: relative;
-      color: #dc2626;
-      text-decoration: line-through;
-      cursor: help;
-    }
 
-    .struck-text::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      left: 50%;
-      bottom: 130%;
-      transform: translateX(-50%);
-      max-width: 280px;
-      padding: 10px 12px;
-      background: rgba(15, 15, 15, 0.95);
-      color: #fff;
-      font-size: 0.85rem;
-      line-height: 1.4;
-      border-radius: 6px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.25s ease, transform 0.25s ease;
-      z-index: 50;
-    }
-
-    .struck-text:hover::after {
-      opacity: 1;
-      transform: translateX(-50%) translateY(-6px);
-    }
-  </style>
-</head>
 
 </head>
 <body class="min-h-full bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 bg-pattern">
