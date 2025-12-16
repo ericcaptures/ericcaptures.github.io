@@ -27,7 +27,7 @@
         
         .portal-card::before {
             content: '';
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             right: 0;
@@ -120,6 +120,7 @@
         }
         .struck-text {
   position: static;
+            z-index:9999;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: line-through;
   text-decoration-color: rgba(251, 191, 36, 0.9); /* amber-400 */
