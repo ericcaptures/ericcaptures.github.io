@@ -119,20 +119,20 @@
                 radial-gradient(circle at 75% 25%, rgba(239, 68, 68, 0.1) 0%, transparent 50%);
         }
         .struck-text {
-  position: static;
-            z-index:9999;
+  position: relative;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: line-through;
-  text-decoration-color: rgba(251, 191, 36, 0.9); /* amber-400 */
+  text-decoration-color: rgba(251, 191, 36, 0.9);
   text-decoration-thickness: 2px;
   cursor: help;
 }
 
 .struck-text::after {
   content: attr(data-tooltip);
-  position: relative;
+  position: fixed;              /* 🔑 fix */
   left: 50%;
-  bottom: 130%;
+  bottom: auto;
+  top: 1rem;                    /* keeps it near the hovered text vertically */
   transform: translateX(-50%);
   max-width: 280px;
   padding: 12px 14px;
@@ -145,7 +145,7 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .struck-text:hover::after {
